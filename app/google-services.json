@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "807138738811",
+    "project_id": "audio-social-f0bdf",
+    "storage_bucket": "audio-social-f0bdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807138738811:android:0f544f88bf5092d69718de",
+        "android_client_info": {
+          "package_name": "com.example.audiosocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807138738811-jdtsfrk30i31v9ep5qanjsf5r77o46jl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techsultann.audiosocial",
+            "certificate_hash": "6663ffa96ecee2dddf0044d37a299fe0e1d4ba77"
+          }
+        },
+        {
+          "client_id": "807138738811-r1cjmdeon8ll97r85f3d6noo1i627k3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5BKixj1903vtJ4fGeGYrljAteN6ymAg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807138738811-r1cjmdeon8ll97r85f3d6noo1i627k3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
