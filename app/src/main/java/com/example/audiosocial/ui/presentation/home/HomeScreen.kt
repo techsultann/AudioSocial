@@ -12,17 +12,37 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.audiosocial.component.HomePageItem
+import com.example.audiosocial.component.RecordBottomSheet
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun HomeScreen(){
-    Scaffold { paddingValues ->
+    val showBottomSheet = remember { mutableStateOf(false) }
+    Scaffold(
+        floatingActionButton = {
+            FloatingActionButton(
+                onClick = {},
+            ) {
+                Icon(
+                    imageVector = Icons.Default.PlayArrow,
+                    contentDescription = "Play icon"
+                )
+            }
+        }
+    ) { paddingValues ->
         LazyColumn(
             modifier = Modifier
                 .padding(paddingValues)
@@ -34,6 +54,11 @@ fun HomeScreen(){
                 HomePageItem()
             }
         }
+    }
+    if (showBottomSheet.value){
+        RecordBottomSheet(
+            showBottomSheet = showBottomSheet
+        )
     }
 }
 
